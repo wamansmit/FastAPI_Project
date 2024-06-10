@@ -10,7 +10,7 @@ Follow the instructions in the provided link to set up Minikube and Prometheus o
 - **Objective:** Develop and deploy a Fast API pod on your system using Minikube.
 - **Operations:**
   1. [POST]: `/createDeployment/FastAPI`
-     - Apply a Kubernetes deployment (any application of your choice) of the name supplied in the post request.
+     - Apply Kubernetes deployment the name supplied in the post request.
   2. [GET]: `/getPromdetails`
      - Fetch the details of all the running pods from the Prometheus client.
 
