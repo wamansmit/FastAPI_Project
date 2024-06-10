@@ -1,6 +1,6 @@
 # Wobot_Assignment
 
-```markdown
+
 # Assignment – Cloud Internship
 
 ## TASK 1: Setup Minikube and Prometheus
@@ -22,4 +22,4 @@ Follow the instructions in the provided link to set up Minikube and Prometheus o
   - Execution of the FAST API endpoints
   - Desired output screenshots
 
-```
+
