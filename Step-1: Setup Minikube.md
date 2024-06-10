@@ -1,1 +1,1 @@
-TASK 1: Setup Miniqube
+Step 1: Setup Miniqube
