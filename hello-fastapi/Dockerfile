@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the requirements file
-COPY hello-fastapi/* .
+COPY hello-fastapi/* /app
 
 # Install the dependencies
 RUN pip install -r requirements.txt
