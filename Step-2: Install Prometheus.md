@@ -32,6 +32,11 @@ Here are the steps to deploy Prometheus using `apiVersion: apps/v1` and `kind: D
      - job_name: 'prometheus'
        static_configs:
          - targets: ['localhost:9090']
+
+     - job_name: 'fastapi'
+      
+       static_configs:
+         - targets: ['localhost:30007']  # Replace with your NodePort
    ```
 
 3. **Create a ConfigMap for Prometheus**:
