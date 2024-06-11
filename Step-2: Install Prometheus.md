@@ -34,3 +34,36 @@ Certainly! To deploy Prometheus on Kubernetes using Helm, you can follow these s
      ```bash
      kubectl get pods -n prometheus
      ```
+Certainly! Let's break down the steps to create a custom `prometheus.yaml` file by modifying the default values from the Helm chart:
+
+1. **Locate the Default Values:**
+   - Helm charts come with default configuration values defined in their `values.yaml` files.
+   - You can find the default Prometheus values in the Helm chart repository or by fetching them directly using:
+     ```
+     helm show values prometheus-community/prometheus > default-prometheus-values.yaml
+     ```
+
+2. **Create Your Custom Configuration:**
+   - Copy the contents of `default-prometheus-values.yaml` to a new file named `prometheus.yaml`.
+   - Edit `prometheus.yaml` to adjust the values according to your requirements.
+   - Specify any additional scrape targets, alerting rules, or other settings you need.
+
+3. **Customize the Configuration:**
+   - Modify the following sections as needed:
+     - `global`: Set global parameters like scrape interval and timeout.
+     - Other specific sections for exporters, scrape jobs, and alerting rules.
+
+4. **Install Prometheus with Custom Configuration:**
+   - Deploy Prometheus using your custom configuration:
+     ```
+     helm install prometheus-release-name prometheus-community/prometheus -f prometheus.yaml
+     ```
+     Replace `prometheus-release-name` with your desired release name.
+
+5. **Verify Deployment:**
+   - Check if Prometheus pods are running:
+     ```
+     kubectl get pods -n prometheus
+     ```
+
+
