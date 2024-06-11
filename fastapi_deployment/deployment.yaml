@@ -18,4 +18,3 @@ spec:
           image: smitwaman/fastapi:20240611
           ports:
             - containerPort: 9009
-
