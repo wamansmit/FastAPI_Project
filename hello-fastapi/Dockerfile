@@ -5,13 +5,10 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the requirements file
-COPY app/requirements.txt .
+COPY hello-fastapi/* .
 
 # Install the dependencies
 RUN pip install -r requirements.txt
-
-# Copy the application code
-COPY app/ .
 
 # Expose the port the application will use
 EXPOSE 8000
