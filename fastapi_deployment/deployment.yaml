@@ -15,6 +15,11 @@ spec:
     spec:
       containers:
         - name: fastapi-app
-          image: smitwaman/fastapi:20240611
+          image: smitwaman/fastapi:v1
           ports:
             - containerPort: 9009
+          resources:
+            limits:
+              cpu: "0.5" # Set CPU limit (adjust as needed)
+              memory: "256Mi" # Set memory limit (adjust as needed)
+
