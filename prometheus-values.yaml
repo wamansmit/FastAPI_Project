@@ -243,6 +243,12 @@ prometheus-windows-exporter:
   ## Enable ServiceMonitor and set Kubernetes label to use as a job label
   ##
   prometheus:
+  
+   server:
+      configMapOverrideName: prometheus-server-config
+      configMapOverrideKey: prometheus.yml
+
+    
     monitor:
       enabled: true
       jobLabel: jobLabel
