@@ -244,7 +244,7 @@ prometheus-windows-exporter:
   ##
   prometheus:
   
-   server:
+    server:
       configMapOverrideName: prometheus-server-config
       configMapOverrideKey: prometheus.yml
 
