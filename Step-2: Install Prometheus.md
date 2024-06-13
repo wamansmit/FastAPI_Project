@@ -23,7 +23,7 @@ Certainly! To deploy Prometheus on Kubernetes using Helm, you can follow these s
 3. **Install Prometheus:**
    - Deploy Prometheus using the Helm chart:
      ```bash
-     helm install prometheus-operator prometheus-community/kube-prometheus-stack --namespace monitoring
+     helm install prometheus-operator prometheus-community/kube-prometheus-stack --namespace prometheus
 
      ```
 
