@@ -1,4 +1,9 @@
 Certainly! To deploy Prometheus on Kubernetes using Helm, you can follow these steps:
+**Create namespace:**
+   - If you haven't already, install Helm on your Kubernetes cluster. You can use the following commands:
+     ```bash
+     kubectl create nns prometheus
+     ```
 
 1. **Install Helm:**
    - If you haven't already, install Helm on your Kubernetes cluster. You can use the following commands:
@@ -18,7 +23,8 @@ Certainly! To deploy Prometheus on Kubernetes using Helm, you can follow these s
 3. **Install Prometheus:**
    - Deploy Prometheus using the Helm chart:
      ```bash
-     helm install prometheus prometheus-community/prometheus
+     helm install prometheus-operator prometheus-community/kube-prometheus-stack --namespace monitoring
+
      ```
 
 4. **Customize Configuration (Optional):**
