@@ -8,11 +8,6 @@ Follow the instructions in the provided link to set up Minikube and Prometheus o
 
 ## TASK 2: Develop and deploy a Fast API pod
 - **Objective:** Develop and deploy a Fast API pod on your system using Minikube.
-- **Operations:**
-  1. [POST]: `/createDeployment/FastAPI`
-     - Apply Kubernetes deployment the name supplied in the post request.
-  2. [GET]: `/getPromdetails`
-     - Fetch the details of all the running pods from the Prometheus client.
 
 ## TASK 3: Submission Details
 - **Requirement:** Submit a PowerPoint (PPT) presentation detailing your approach to the problem.
