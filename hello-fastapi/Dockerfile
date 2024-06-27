@@ -5,13 +5,13 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-<<<<<<< HEAD
+
 # Copy the requirements file
 COPY hello-fastapi/* /app/
 
-=======
-COPY app/* /app/
->>>>>>> a14b5e9 (updated files 1152)
+
+#COPY app/* /app/
+
 # Install the dependencies
 RUN pip install -r requirements.txt
 
